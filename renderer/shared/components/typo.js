@@ -143,14 +143,3 @@ Text.propTypes = {
 export function BlockText({css, ...props}) {
   return <Text {...props} css={{...css, display: 'block'}} />
 }
-
-export function PageTitle(props) {
-  return (
-    <Heading
-      fontSize={rem(28)}
-      fontWeight={500}
-      margin={`${rem(24)} 0 ${rem(24)}`}
-      {...props}
-    />
-  )
-}

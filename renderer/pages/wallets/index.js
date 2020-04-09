@@ -5,7 +5,7 @@ import {useTranslation} from 'react-i18next'
 
 import theme from '../../shared/theme'
 import Layout from '../../shared/components/layout'
-import {Box, Drawer, PageTitle} from '../../shared/components'
+import {Box, Drawer} from '../../shared/components'
 import Flex from '../../shared/components/flex'
 import Actions from '../../shared/components/actions'
 import IconLink from '../../shared/components/icon-link'
@@ -20,6 +20,7 @@ import Loading from '../../shared/components/loading'
 import {useWallets} from '../../shared/hooks/use-wallets'
 import {useChainState} from '../../shared/providers/chain-context'
 import {FlatButton} from '../../shared/components/button'
+import {PageTitle} from '../../screens/app/components'
 
 export default function Index() {
   const {t} = useTranslation()

@@ -3,7 +3,7 @@ import {margin} from 'polished'
 import {useTranslation} from 'react-i18next'
 import useLocalStorage from '../../shared/hooks/use-local-storage'
 import Layout from '../../shared/components/layout'
-import {Box, Drawer, PageTitle} from '../../shared/components'
+import {Box, Drawer} from '../../shared/components'
 import theme, {rem} from '../../shared/theme'
 import FlipToolbar, {
   FlipToolbarItem,
@@ -21,6 +21,7 @@ import {useChainState} from '../../shared/providers/chain-context'
 import DeleteFlipForm from '../../screens/flips/components/delete-flip-form'
 import {useIdentityState} from '../../shared/providers/identity-context'
 import {capitalize} from '../../shared/utils/string'
+import {PageTitle} from '../../screens/app/components'
 
 function Flips() {
   const {t} = useTranslation('error')

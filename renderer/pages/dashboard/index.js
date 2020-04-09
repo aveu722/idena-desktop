@@ -4,7 +4,7 @@ import {rem} from 'polished'
 import {useTranslation} from 'react-i18next'
 import {State} from 'xstate'
 import Layout from '../../shared/components/layout'
-import {Drawer, Box, PageTitle, Absolute} from '../../shared/components'
+import {Drawer, Box, Absolute} from '../../shared/components'
 import SendInviteForm from '../../screens/contacts/components/send-invite-form'
 import theme from '../../shared/theme'
 import {InviteProvider} from '../../shared/providers/invite-context'
@@ -26,6 +26,7 @@ import {usePersistence} from '../../shared/hooks/use-persistent-state'
 import {useEpochState} from '../../shared/providers/epoch-context'
 import {loadPersistentState} from '../../shared/utils/persist'
 import {loadValidationState} from '../../screens/validation/machine'
+import {PageTitle} from '../../screens/app/components'
 
 function Dashboard() {
   const router = useRouter()

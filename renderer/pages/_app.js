@@ -1,6 +1,7 @@
 import React from 'react'
 import App from 'next/app'
 import Router from 'next/router'
+import {ThemeProvider, CSSReset} from '@chakra-ui/core'
 import NProgress from 'nprogress'
 import '../i18n'
 import GlobalStyle from '../shared/components/global-style'
@@ -16,6 +17,7 @@ import {AutoUpdateProvider} from '../shared/providers/update-context'
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'tui-image-editor/dist/tui-image-editor.css'
+import {uiTheme} from '../shared/theme'
 
 export default class MyApp extends App {
   render() {
@@ -27,9 +29,12 @@ export default class MyApp extends App {
     return (
       <>
         <GlobalStyle />
-        <AppProviders>
-          <Component {...{...pageProps, err}} />
-        </AppProviders>
+        <ThemeProvider theme={uiTheme}>
+          <CSSReset />
+          <AppProviders>
+            <Component {...{...pageProps, err}} />
+          </AppProviders>
+        </ThemeProvider>
       </>
     )
   }
