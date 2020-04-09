@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import {wordWrap, padding, margin, borderRadius} from 'polished'
-import {Absolute, Box} from '.'
+import {Absolute} from './position'
+import Box from './box'
 import Flex from './flex'
 import theme, {rem} from '../theme'
 import {
