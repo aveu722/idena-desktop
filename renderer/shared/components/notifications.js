@@ -35,7 +35,6 @@ export function Notification({
   pinned,
 }) {
   const [hidden, setHidden] = useState(false)
-
   return (
     !hidden && (
       <div
