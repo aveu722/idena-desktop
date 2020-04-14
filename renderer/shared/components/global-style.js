@@ -34,7 +34,6 @@ export default () => (
     *::after {
       box-sizing: inherit;
     }
-    body > div,
     main {
       min-height: 100vh;
     }

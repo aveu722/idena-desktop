@@ -69,7 +69,7 @@ export function IconButton({icon, children, ...props}) {
       transition="0.3s ease-in"
       {...props}
     >
-      <Icon name={icon} size={4} mr={2} />
+      <Icon name={icon} size={5} mr={2} />
       {children}
     </Button>
   )
