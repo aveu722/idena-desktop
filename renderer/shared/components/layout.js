@@ -84,6 +84,8 @@ function NormalApp(props) {
       <GlobalModals />
       <style jsx>{`
         section {
+          display: flex;
+          flex-direction: column;
           flex: 1;
           overflow-y: auto;
         }
